@@ -7,11 +7,23 @@ p {
     padding-bottom:20px;
     padding-left:10px;
 }
-
 img {
 	padding-bottom:20px;
     padding-left:10px;
     padding-right:10px
+}
+.parallax {
+    /* The image used */
+    background-image: url('img_parallax.jpg');
+
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
     
 </style>
@@ -26,6 +38,8 @@ img {
     <p>Welcome to my page!</p>
     <p><strong>All About Me:</strong></p>
     
+    
+    
     <div>
 	<img src="http://www.chesterspringslibrary.org/wp-content/uploads/2015/12/Girls-Who-Code.png"
              alt="Smiley face" 
@@ -34,24 +48,33 @@ img {
     <p>I'm from Chappaqua, NY, and attend Horace Greeley High School, where I'm student body President. I'm passionate about writing for my school newspaper, yoga, and coding!
     </p>
     </div>
-
-    <p><strong>I'm so excited to be here at the Summer Immersion Program!</strong></p>
+</p>
 	<img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/19959040_494956620836747_5591037612630175575_n.jpg?oh=dee5c66115212b3ba752a6c8a98624e5&oe=59F286A4" alt="Hannah Fenlon" 
         	 style="float:left;width:350px;height:322px;"
              align="right"> 
     <p>It's great to be surrounded by such empowered girls passionate about code and STEM. In school, I've played the 'only girl' role in almost all of my STEM classes.     </p>
 	</div>
+    
+    <button type="button" onclick="myFunction()"><strong>Click to see things I love!</strong></button>
+
+<p id="demo"><strong>I'm so excited to be here at the Summer Immersion Program!</strong></p>
+
+<script>
+function myFunction() { 
+    document.getElementById("demo").innerHTML = "Travelling. Reading. Trying new foods. Situational dabbing.";
+}
+</script>
+
 
 	<div>
-    <p><strong>Things I love:</strong></p>
+   
     <img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/18619932_469147543417655_7724235962769234141_n.jpg?oh=9eaa41147b535ce0d6811d1dedce2639&oe=59FC93BB" alt="Smiley face" style="float:right;width:450px;height:322px;">     
-    <p> Travelling. Reading. Trying new foods. Situational dabbing. 
-    </p>
+    
     </div>
 
     
     <div>
-    <p>Check out my Paddle Game on Scratch!</p>
+   
     <p><a href="https://scratch.mit.edu/users/hgf10514/">Check out my Scratch page!</a></p>
  <img src="paddlegameSS.PNG"
              alt="Paddle game" 
@@ -63,5 +86,3 @@ img {
 
 
 </html>
-Contact GitHub API Training Shop Blog About
-© 2017 GitHub, Inc. Terms Privacy Security Status Help
